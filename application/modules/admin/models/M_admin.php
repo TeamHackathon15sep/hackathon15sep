@@ -16,6 +16,7 @@
 							'username'=>$this->input->post('username'),
 							'password'=>md5($this->input->post('password')),
 							'nama'=>$this->input->post('nama'),
+							'level'=>$this->input->post('level'),
 							'email'=>$this->input->post('email'),
 							'foto'=>$foto);
 			$this->db->insert('admin',$data);

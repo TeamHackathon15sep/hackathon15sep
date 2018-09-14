@@ -40,6 +40,7 @@
                   <th>No.</th>
                   <th>Username</th>
                   <th>Nama</th>
+                  <th>Jabatan</th>
                   <th>Email</th>
                   <th>Create Time</th>
                   <th>Last Update</th>
@@ -55,6 +56,7 @@
                             <td>$no</td>
                             <td>$r->username</td>
                             <td>$r->nama</td>
+                            <td>$r->level</td>
                             <td>$r->email</td>
                             <td>$r->create_time</td>
                             <td>$r->last_update</td>

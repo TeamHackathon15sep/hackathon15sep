@@ -20,10 +20,28 @@ class Auth extends CI_Controller {
             $row = $this->M_auth->data_login($this->input->post('username'), md5($this->input->post('password')));
  
 //          daftarkan session
+            switch ($row->level) {
+                case 'admin':
+                    $level='Supervisior';
+                    break;
+                case 'manager':
+                    $level='Manager';
+                    break;
+                case 'staff':
+                    $level='Staff';
+                    break;
+                case 'admin':
+                    $level='Supervisior';
+                    break;
+                default:
+                    # code...
+                    break;
+            }
             $data = array(
                 'logged' => TRUE,
                 'username' => $row->username,
                 'nama' => $row->nama,
+                'level' => $row->level,
                 'email' => $row->email,
                 'create_time' => $row->create_time,
                 'last_update' => $row->last_update,

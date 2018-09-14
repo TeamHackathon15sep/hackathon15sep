@@ -25,7 +25,7 @@
               </div>
               <!-- /.widget-user-image -->
               <h3 class="widget-user-username"><?php echo $this->session->userdata('nama'); ?></h3>
-              <h5 class="widget-user-desc">Admin</h5>
+              <h5 class="widget-user-desc"><?php echo $this->session->userdata('level'); ?></h5>
             </div>
             <div class="box-footer no-padding">
               <ul class="nav nav-stacked">

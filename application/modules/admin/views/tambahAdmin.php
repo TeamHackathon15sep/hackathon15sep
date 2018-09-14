@@ -39,6 +39,19 @@
                   </div>
                 </div>
                 <div class="form-group">
+                  <label for="inputEmail3" class="col-sm-2 control-label">Jabatan</label>
+
+                  <div class="col-sm-10">
+                    <select id="level" name="level" class="form-control">
+                    <option value="admin">Supervisior</option>
+                    <option value="manager">Manager</option>
+                    <option value="staff">Staff</option>
+                    <option value="divisi">Kepala Divisi</option>
+                    </select>
+                    <!--input type="" class="form-control" id="password" name="password" placeholder="Password"-->
+                  </div>
+                </div>
+                <div class="form-group">
                   <label for="inputEmail3" class="col-sm-2 control-label">Nama</label>
 
                   <div class="col-sm-10">
