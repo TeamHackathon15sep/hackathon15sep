@@ -4,7 +4,7 @@ class Auth extends CI_Controller {
 
     public function index($error = NULL) {
         $data = array(
-            'title' => 'IKM-Perizinan | Login',
+            'title' => 'PT Jamu | Login',
             'action' => site_url('auth/login'),
             'error' => $error
         );
